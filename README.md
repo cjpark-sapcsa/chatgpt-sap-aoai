@@ -14,7 +14,7 @@ Azure Cognitive Services Instance https://azure.microsoft.com/en-us/products/cog
 Azure OpenAI Service Instance https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/
 A SAP system with some product data e.g https://developers.sap.com/tutorials/gateway-demo-signup.html, ES5 Demo system comes with a good setup of EPM data model with Odata service. 
 Python 3.7 or later installed on your machine (Visual Studio Code) 
-AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
+AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/), laster AzureBot service will be connected to Micrsoft Teams as Channel. 
 
 ## Build Steps
 
@@ -33,15 +33,19 @@ cd Odata-ES5
 pip install -r requirements.txt
 Set up your environment variables: Create a .env file in the root directory of the project, and add the following environment variables:
 
-AZURE_KEY: Your Azure API key
-Odata_URL: Your SAP connection string to ES5 Odata 
+- created a dedicated Azure Functions with a needed service plan (Basic/Free)
+- Deploy from your local project to Azure Functions 
+
+Azure Bot connection to Teams 
+- code  (see the EchoBot.cs)
+- open the Teams channel within AzureBot. 
 
 ## Code Overview
 The main components of the code are:
 
-main.py: This is the main script that runs the bot. It uses the OpenAI API to process user queries and returns the appropriate responses.
+main.py: This is the main script that runs the process query. It uses the OpenAI API to process user queries and returns the appropriate responses.
 
-__init_.py: This script is responsible for connecting to the SAP system and fetching product data.
+__init_.py: This script is responsible for connecting to the SAP system and fetching product data to HTTP trigger to AzureBot..
 
 
 ## Conclusion
