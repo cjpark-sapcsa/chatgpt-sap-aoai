@@ -1,2 +1,43 @@
-# aoai-sap
-introduce various use cases how to bring Azure OpenAI (AOAI) into SAP owndata  
+# Build SAP Bot with Azure OpenAI
+
+## Introduction
+This repository contains a proof-of-concept (POC) for a chatbot that integrates SAP data with Azure OpenAI's powerful GPT-35-turbo AI model, hosted on Azure. The purpose of this bot is to answer user queries related to specific products stored in an SAP system, such as details about the product's name, ID, and other properties.
+
+## Prerequisites
+Before you start, make sure you have the following prerequisites:
+
+An Azure account
+A SAP system with some product data e.g https://developers.sap.com/tutorials/gateway-demo-signup.html 
+ - ES5 Demo system comes with a good setup of EPM data model with Odata service. 
+An OpenAI account with access to the GPT model - best way to create of your own deployment model. 
+Python 3.7 or later installed on your machine
+Basic knowledge of Python programming
+AzureBot setup (refernece : https://accessibleai.dev/post/create_and_deploy_bot/)
+
+## Build Steps
+Follow these steps to build the SAP Bot:
+
+Clone the repository: Use the following command to clone this repository to your local machine.
+
+git clone https://github.com/cjpark-sapcsa/Odata-ES5.git
+Install the required packages: Navigate to the project directory and install the required Python packages using the following commands:
+
+cd Odata-ES5
+pip install -r requirements.txt
+Set up your environment variables: Create a .env file in the root directory of the project, and add the following environment variables:
+
+AZURE_KEY: Your Azure API key
+Odata_URL: Your SAP connection string to ES5 Odata 
+
+## Code Overview
+The main components of the code are:
+
+main.py: This is the main script that runs the bot. It uses the OpenAI API to process user queries and returns the appropriate responses.
+
+__init_.py: This script is responsible for connecting to the SAP system and fetching product data.
+
+
+## Conclusion
+With the SAP Bot, you can easily fetch and interact with your SAP data using natural language queries. Leveraging the power of OpenAI's GPT model and Azure's robust infrastructure, this bot can be a valuable tool for anyone needing quick and easy access to their SAP data.
+
+Feel free to clone, modify, and use this project as you see fit. If you have any questions or suggestions, please open an issue or submit a pull request.
