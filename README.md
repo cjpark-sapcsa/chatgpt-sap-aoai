@@ -9,12 +9,11 @@ This repository contains a proof-of-concept (POC) for a chatbot that integrates 
 ## Prerequisites
 Before you start, make sure you have the following prerequisites:
 
-An Azure account
-A SAP system with some product data e.g https://developers.sap.com/tutorials/gateway-demo-signup.html 
- - ES5 Demo system comes with a good setup of EPM data model with Odata service. 
-An OpenAI account with access to the GPT model - best way to create of your own deployment model. 
-Python 3.7 or later installed on your machine
-Basic knowledge of Python programming
+Azure subscription https://azure.microsoft.com/en-us/
+Azure Cognitive Services Instance https://azure.microsoft.com/en-us/products/cognitive-services/#overview
+Azure OpenAI Service Instance https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/
+A SAP system with some product data e.g https://developers.sap.com/tutorials/gateway-demo-signup.html, ES5 Demo system comes with a good setup of EPM data model with Odata service. 
+Python 3.7 or later installed on your machine (Visual Studio Code) 
 AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
 
 ## Build Steps
