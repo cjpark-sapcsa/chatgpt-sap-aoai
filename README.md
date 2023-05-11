@@ -1,7 +1,10 @@
-# Build SAP Bot with Azure OpenAI
+# Build SAP Bot with Azure OpenAI - Generative ChatGPT 
 
 ## Introduction
 This repository contains a proof-of-concept (POC) for a chatbot that integrates SAP data with Azure OpenAI's powerful GPT-35-turbo AI model, hosted on Azure. The purpose of this bot is to answer user queries related to specific products stored in an SAP system, such as details about the product's name, ID, and other properties.
+
+![chatgpt-image](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2dbcf287-1fac-4cfb-8fb0-ae9351628dc1)
+
 
 ## Prerequisites
 Before you start, make sure you have the following prerequisites:
@@ -12,7 +15,7 @@ A SAP system with some product data e.g https://developers.sap.com/tutorials/gat
 An OpenAI account with access to the GPT model - best way to create of your own deployment model. 
 Python 3.7 or later installed on your machine
 Basic knowledge of Python programming
-AzureBot setup (refernece : https://accessibleai.dev/post/create_and_deploy_bot/)
+AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
 
 ## Build Steps
 Follow these steps to build the SAP Bot:
