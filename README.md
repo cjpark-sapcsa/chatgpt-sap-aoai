@@ -9,12 +9,22 @@ This repository contains a proof-of-concept (POC) for a chatbot that integrates 
 ## Prerequisites
 Before you start, make sure you have the following prerequisites:
 
-Azure subscription https://azure.microsoft.com/en-us/
-Azure Cognitive Services Instance https://azure.microsoft.com/en-us/products/cognitive-services/#overview
-Azure OpenAI Service Instance https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/
-A SAP system with some product data e.g https://developers.sap.com/tutorials/gateway-demo-signup.html, ES5 Demo system comes with a good setup of EPM data model with Odata service. 
-Python 3.7 or later installed on your machine (Visual Studio Code) 
-AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/), laster AzureBot service will be connected to Micrsoft Teams as Channel. 
+Azure subscription
+https://azure.microsoft.com/en-us/
+
+Azure Cognitive Services Instance
+https://azure.microsoft.com/en-us/products/cognitive-services/#overview
+
+Azure OpenAI Service Instance 
+https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/
+
+A SAP system with some product data 
+- ES5 Demo system comes with a good setup of EPM data model with Odata service, https://developers.sap.com/tutorials/gateway-demo-signup.html, 
+
+Python 3.7 or later installed on your machine (Visual Studio Code):
+
+AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
+- AzureBot service will be connected to Micrsoft Teams as Channel 
 
 ## Build Steps
 
@@ -22,7 +32,7 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 ![build flow](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2d787436-6039-4dba-947a-797797e23b94)
 
 
-Follow these steps to build the SAP Bot:
+1. Azure Functions - with HTTP Trigger 
 
 Clone the repository: Use the following command to clone this repository to your local machine.
 
