@@ -17,6 +17,11 @@ Python 3.7 or later installed on your machine (Visual Studio Code)
 AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
 
 ## Build Steps
+
+Here is the overall build flow and solution desing for the SAP Bot with ChatGPT. 
+![build flow](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2d787436-6039-4dba-947a-797797e23b94)
+
+
 Follow these steps to build the SAP Bot:
 
 Clone the repository: Use the following command to clone this repository to your local machine.
