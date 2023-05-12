@@ -1,0 +1,16 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+fastapi
+uvicorn
+httpx
+azure-functions
+openai
+pydantic
+requests
+matplotlib
+pandas
+azure-storage-blob
+spacy
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
