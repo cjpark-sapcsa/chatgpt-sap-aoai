@@ -5,7 +5,6 @@ This repository contains a proof-of-concept (POC) for a chatbot that integrates 
 
 ![chatgpt-image](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2dbcf287-1fac-4cfb-8fb0-ae9351628dc1)
 
-
 ## Prerequisites
 Before you start, make sure you have the following prerequisites:
 
@@ -43,16 +42,41 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 - `pip install -r requirements.txt`
 
 2.2 Local project testing setup 
-- the solution is using APP@FastAPI, in order to test in local, you need to install the below as well in the  (.venv).
+ The solution is using APP@FastAPI, in order to test in local, you need to install the below as well in the  (.venv)
 - `pip install spacy`
 - `python -m spacy download en_core_web_sm`
 - `uvicorn main:app --reload`
 - ![unicorn loading](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/1354a2b8-9488-4873-9d1d-557fb7ece639)
 
+2.3 Testing with Postman 
+- `http://127.0.0.1:8000/api/query?question=does HT-1003  has a good rating count compare to others ? `
+- ![postman test 1](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/01f4f3ea-c48d-4203-ab85-e4c7d4e94ba5)
 
-Azure Bot connection to Teams 
-- code  (see the EchoBot.cs)
-- open the Teams channel within AzureBot. 
+2.4 Deploy to Azure Functions
+- ![deploy to Auzre Functions](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/86e75ccc-24dc-407a-a8a2-6fa2b2106777)
+
+2.4.1 Testign with Azure Function App 
+- Menu -> Developer -> Code + Test
+- ![auzre functio test](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/1a01ab41-0cfd-4734-8ff5-78814793c47d)
+Output check 
+- ![Function output](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/e036d949-5e50-4518-ada7-d7d7b22ec27e)
+
+2.4.2 Get Function URL with KEY for the integration of AzureBot. 
+- ![Get Function URL](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/817047cc-69d0-4199-be5f-ee3cf7b0271a)
+
+3. Setup Azure Bot connection to Teams 
+- Make sure you have up and running AzureBot after you follow the reference blog AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
+- Replace EchoBot.cs code 
+- ![EchBot cs](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/1978f2d6-09ed-4aef-b094-cb6021d21a41)
+- Replace line 16 : Private readonly string _azureFunctionUrl = "";  with URL from section 2.4.2
+- Save All
+- Rebuild
+- Publish 
+
+4. Azure Bot Connection testing to Teams
+![add Teams channel](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/f9a4edc7-45a5-4e52-8cac-e684a3640f79)
+
+![Test with teams](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/6350ea38-419f-4cdf-abc2-94b1119e3b96)
 
 ## Code Overview
 The main components of the code are:
