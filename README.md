@@ -58,7 +58,7 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 2.4.1 Testign with Azure Function App 
 - Menu -> Developer -> Code + Test
 - ![auzre functio test](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/1a01ab41-0cfd-4734-8ff5-78814793c47d)
-Output check 
+- Output check
 - ![Function output](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/e036d949-5e50-4518-ada7-d7d7b22ec27e)
 
 2.4.2 Get Function URL with KEY for the integration of AzureBot. 
