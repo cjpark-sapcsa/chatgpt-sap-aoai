@@ -32,19 +32,23 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 ![build flow](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2d787436-6039-4dba-947a-797797e23b94)
 
 
-1. Azure Functions - with HTTP Trigger 
+1. Setup the Local Project 
+   - To use of Visual Studio Code, createa your local project for Azure Functions, https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp
+   
+2. Replace code (__init_.py, main.py, function.json, requirement.txt)  
+![local project setup](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/0cf8942f-e6a0-4cf6-b797-140405fad8cd)
 
-Clone the repository: Use the following command to clone this repository to your local machine.
+2.1 Install the required packages: 
+ Navigate to the project directory and install the required Python packages using the following commands
+- `pip install -r requirements.txt`
 
-git clone https://github.com/cjpark-sapcsa/Odata-ES5.git
-Install the required packages: Navigate to the project directory and install the required Python packages using the following commands:
+2.2 Local project testing setup 
+- the solution is using APP@FastAPI, in order to test in local, you need to install the below as well in the  (.venv).
+- `pip install spacy`
+- `python -m spacy download en_core_web_sm`
+- `uvicorn main:app --reload`
+- ![unicorn loading](https://github.com/cjpark-sapcsa/aoai-sap-usecase-1-Odata/assets/60184856/1354a2b8-9488-4873-9d1d-557fb7ece639)
 
-cd Odata-ES5
-pip install -r requirements.txt
-Set up your environment variables: Create a .env file in the root directory of the project, and add the following environment variables:
-
-- created a dedicated Azure Functions with a needed service plan (Basic/Free)
-- Deploy from your local project to Azure Functions 
 
 Azure Bot connection to Teams 
 - code  (see the EchoBot.cs)
