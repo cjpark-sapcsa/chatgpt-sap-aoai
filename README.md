@@ -1,9 +1,7 @@
 # Build SAP Bot with Azure OpenAI - Generative ChatGPT 
 
 ## Introduction
-This repository contains a proof-of-concept (POC) for a chatbot that integrates SAP data with Azure OpenAI's powerful GPT-35-turbo AI model, hosted on Azure. The purpose of this bot is to answer user queries related to specific products stored in an SAP system, such as details about the product's name, ID, and other properties.
-
-![chatgpt-image](https://github.com/cjpark-sapcsa/aoai-sap/assets/60184856/2dbcf287-1fac-4cfb-8fb0-ae9351628dc1)
+This repository hosts instructions and code needed to build a chatbot that integrates SAP data with Azure OpenAI's advanced GPT-35-turbo AI model, hosted on Azure. The bot is designed to address user queries regarding specific products available in an SAP system, including details about the product's name, ID, and other properties.
 
 ## Prerequisites
 Before you start, make sure you have the following prerequisites:
