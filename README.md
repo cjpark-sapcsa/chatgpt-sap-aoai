@@ -52,13 +52,13 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 ![postman test 1](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/d4ef0289-f9a7-4a8f-b37f-e51509eb2f92)
 
 2.4 Deploy to Azure Functions
--![deploy to Auzre Functions](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/e9dd6612-dce7-43b4-b9f0-785bf28f44c2)
+- ![deploy to Auzre Functions](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/e9dd6612-dce7-43b4-b9f0-785bf28f44c2)
 
 2.4.1 Testign with Azure Function App 
 - Menu -> Developer -> Code + Test
-![auzre functio test](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/6e85b43f-2a7f-4b35-a19c-1a9764715f65)
+- ![auzre functio test](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/6e85b43f-2a7f-4b35-a19c-1a9764715f65)
 - Output check
--![Function output](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/1224e5e3-d090-43ac-9b24-71f203898b3b)
+- ![Function output](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/1224e5e3-d090-43ac-9b24-71f203898b3b)
 
 2.4.2 Get Function URL with KEY for the integration of AzureBot. 
 - ![Get Function URL](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/7972e67c-8ece-4531-8c4f-da824d20557c)
