@@ -57,24 +57,26 @@ Here is the overall build flow and solution desing for the SAP Bot with ChatGPT.
 2.4.1 Testign with Azure Function App 
 - Menu -> Developer -> Code + Test
 - ![auzre functio test](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/6e85b43f-2a7f-4b35-a19c-1a9764715f65)
+
 - Output check
 - ![Function output](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/1224e5e3-d090-43ac-9b24-71f203898b3b)
 
 2.4.2 Get Function URL with KEY for the integration of AzureBot. 
-- ![Get Function URL](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/7972e67c-8ece-4531-8c4f-da824d20557c)
+![Get Function URL](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/7972e67c-8ece-4531-8c4f-da824d20557c)
 
 3. Setup Azure Bot connection to Teams 
 - Make sure you have up and running AzureBot after you follow the reference blog AzureBot setup (reference URL : https://accessibleai.dev/post/create_and_deploy_bot/)
 - Replace EchoBot.cs code 
-- ![EchBot cs](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/8e4f88bd-d6dd-49d2-8ba0-c5b25da0610c)
-- Replace line 16 : Private readonly string _azureFunctionUrl = "";  with URL from section 2.4.2
+ ![EchBot cs](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/8e4f88bd-d6dd-49d2-8ba0-c5b25da0610c)
+
+-  Replace line 16 : Private readonly string _azureFunctionUrl = "";  with URL from section 2.4.2
 - Save All
 - Rebuild
 - Publish 
 
 4. Azure Bot Connection testing to Teams
 -![add Teams channel](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/3283409d-55c7-4bd4-8113-641d8ded3856)
-- ![Test with teams](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/649c8044-7736-4d10-adf7-e13c9be3bca6)
+ ![Test with teams](https://github.com/cjpark-sapcsa/chatgpt-sap-aoai/assets/60184856/649c8044-7736-4d10-adf7-e13c9be3bca6)
 
 ## Code Overview
 The main components of the code are:
